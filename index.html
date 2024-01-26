@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Decodificador - ONE</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <main class="conteudo__principal">
+        <section class="cabecalho">
+            <img class="cabecalho__logo" src="assents/iconAlura.png" alt="Logo Alura">
+        </section>
+    
+        <section class="texto">
+            <textarea class="imput_dados" placeholder="Digite seu texto"></textarea>
+        </section>
+        <div class="msg">
+            <img class="img_exclamacao" src="./assents/exclamation.png" alt="Ícone de exclamação">
+            <p>Apenas letras minúsculas e sem acento.</p> 
+        </div>          
+        <div class="espaco__btn">
+            <button class="btn" id="cripto" onclick="processar('criptografar')">Embaralhar</button>
+            <button class="btn" id="decripto" onclick="processar('descriptografar')">Desenbaralhar</button>
+        </div>
+    </main>
+    <section class="imput_resultado">
+        <img src="./assents/1.PNG.png" alt="Resultado" id="imagemResultado">
+        <p id="resultado" class="resultado_texto"></p>
+        <button id="copyBtn" onclick="copiarTexto()">Copiar</button>
+    </section>
+    <footer class="rodape">
+        <p id="txt">Alexandre Diamante + ONE (Oracle + Alula)</p>
+    </footer>    
+</body>
+</html>
